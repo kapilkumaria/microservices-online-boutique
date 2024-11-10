@@ -151,7 +151,7 @@ pipeline {
                             sed -i 's|image: .*|image: ${newImageTag}|g' ${manifestFile}
                         """
 
-                        // Commit and push the changes to the kubernetes manifests branch
+                        // Commit and push the changes to the kubernetes manifests branches
                         sh """
                             git config user.name "jenkins-bot"
                             git config user.email "jenkins-bot@yourdomain.com"
