@@ -157,7 +157,8 @@ pipeline {
                             git config user.email "jenkins-bot@yourdomain.com"
                             git add ${manifestFile}
                             git commit -m "Update image tag for ${SERVICE_NAME} to DockerHub ${BUILD_NUMBER}"
-                            git push https://jenkins-bot:${GITHUB_TOKEN}@github.com:kapilkumaria/microservices-online-boutique.git HEAD:feature/kubernetes-manifests
+                            git push https://jenkins-bot:${GITHUB_TOKEN}@github.com/kapilkumaria/microservices-online-boutique.git HEAD:feature/kubernetes-manifests
+
                             
                         """
 
